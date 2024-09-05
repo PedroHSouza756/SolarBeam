@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autores" content=" Leonardo Marques, Nicolas Sant'Anna, Pedro Nogueira, Pedro Souza, Ruan">
+    <meta name="RA"      content="*******,*******, *******, R072CJ1, *******">
+    <link rel="stylesheet" href="estilo.css"> 
+    <script>
+        function calcularEconomia() {
+            const consumo = parseFloat(document.getElementById('consumo').value);
+            const custo = parseFloat(document.getElementById('custo').value);
+            const economia = consumo * custo  * 0.4; // Supondo 40% de economia anual
+            document.getElementById('resultado').innerText = `Você pode economizar R$ ${economia.toFixed(2)} por mês!`;
+        }
+    </script>
+    <title>Solar Beam</title>
+     
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+         <a href="index.html" class=""><img class="logo" src="img/Solarbeam-Logo.png"></a><br>
+         <ul class="nav-menu">
+            <li class="nav-itens"><a href="index.html" class="nav-link">Home</a> </li>
+             <li class="nav-itens"><a href="vantagens.html" class="nav-link">Vantagens</a> </li>
+             <li class="nav-itens"><a href="simuladordecompra.html" class="nav-link">Simulação da compra de placas</a> </li>             
+             <li class="nav-itens"><a href="desenvolvedores.html" class="nav-link">Desenvolvedores</a> </li>
+             
+         </ul>
+        </nav>
+     
+        
+    </header>
+    <main>
+        <section>
+            <h1>Calculadora de Economia com Placas Solares</h1>
+            <h2>Calcule sua Economia Mensal</h2>
+            <label for="consumo">Consumo Mensal (kWh):</label>
+            <input type="number" id="consumo" name="consumo" required><br><br>
+            <label for="custo">Custo por kWh (R$):</label>
+            <input type="number" id="custo" name="custo" required><br><br>
+            <button onclick="calcularEconomia()">Calcular</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Navegue pela SolarBeam, nessa empresa você pode calcular o valor de um sistema solar fotovoltaico para a sua residência, estabelecimento ou indústria, <br>
+            Além disso, veja qual será a economia mensal ao utilizar placas fotovoltaicas, tornando seu investimento ainda mais vantajoso.</p></p>
+    </footer>
+
+
+    
+</body>
+</html>

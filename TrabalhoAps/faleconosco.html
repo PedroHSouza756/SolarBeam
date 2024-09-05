@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autores" content=" Leonardo Marques, Nicolas Sant'Anna, Pedro Nogueira, Pedro Souza, Ruan">
+    <meta name="RA"      content="*******,*******, *******, R072CJ1, *******">
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <title>Fale Conosco - Solar Beam</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class=""><img class="logo" src="img/Solarbeam-Logo.png"></a><br>
+            <ul class="nav-menu">
+                <li class="nav-itens"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-itens"><a href="vantagens.html" class="nav-link">Vantagens</a></li>
+                <li class="nav-itens"><a href="calculadora.html" class="nav-link">Calculadora de economia</a></li>
+                <li class="nav-itens"><a href="faleconosco.html" class="nav-link">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Fale Conosco</h2>
+            <form>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <br><br><br>
+    <footer>
+        <p class="footer-text">
+            Navegue pela SolarBeam e descubra como você pode calcular o valor de um sistema solar fotovoltaico para a sua residência, estabelecimento ou indústria. 
+            Além disso, veja qual será a economia mensal ao utilizar placas fotovoltaicas, tornando seu investimento ainda mais vantajoso.
+        </p>
+    </footer>
+</body>
+</html>
